@@ -1,0 +1,12 @@
+// Tugas 1
+contract MyContract {
+    function foo() external {}
+    function bar() external {}
+}
+
+In MyContract, why does foo() use more gas than bar(), even though their code is the same?
+
+these two function theoretically and functionally have the same gas optimization, 
+but practically may have some differences in type of compiler, function compressing, or minor differencies
+of hash. Those minor things can give an impact to contract gas optimization.
+  
